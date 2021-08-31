@@ -58,14 +58,14 @@
       );
     }
     function getMessages() {
-      $.get("https://rocky-shelf-48597.herokuapp.com/messages", (data) => {
+      $.get("https://rocky-journey-36287.herokuapp.com/message", (data) => {
         //$.get("http://localhost:3010/messages", (data) => {
         console.log(data);
         data.forEach(addMessage);
       });
     }
     function postMessage(message) {
-      $.post("https://rocky-shelf-48597.herokuapp.com/messages", message);
+      $.post("https://rocky-journey-36287.herokuapp.com/message", message);
       //$.post("http://localhost:3010/messages", message);
     }
   </script>
